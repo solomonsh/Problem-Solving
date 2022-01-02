@@ -13,7 +13,7 @@ def encrypted_word(st):
 
 # print(encrypted_word("abc"))
 # print(encrypted_word("abcxcba"))
-# print(encrypted_word("facebook"))
+print(encrypted_word("facebook"))
 # print(encrypted_word("ab"))
 
 print(encrypted_word("cb"))
