@@ -39,16 +39,15 @@ root.right.right = TreeNode(9)
 
 sol = Solution()
 
+ 
+queue = deque()
+queue.append(sol.invertTree(root))
 
-# for testing 
-# queue = deque()
-# queue.append(sol.invertTree(root))
-
-# while queue:
-#     current = queue.popleft()
-#     if current.left != None:
-#             queue.append(current.left) 
-#     if current.right != None:
-#             queue.append(current.right)
-#     print(current.val)
+while queue:
+    current = queue.popleft()
+    if current.left != None:
+            queue.append(current.left) 
+    if current.right != None:
+            queue.append(current.right)
+    print(current.val)
     
